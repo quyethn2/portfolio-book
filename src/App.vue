@@ -1,8 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-// const currentPage = ref(2);
-
 const pages = ref([
   { front: 'Page 1 Front', back: 'Page 1 Back', turned: true, zIndex: 1, animating: true },
   { front: 'Page 2 Front', back: 'Page 2 Back', turned: true, zIndex: 2, animating: true },
@@ -19,12 +17,8 @@ const coverZIndex = ref(100)
 function togglePage(index) {
   if (pages.value[index].animating) return; // Chặn nếu đang lật
   pages.value[index].animating = true;
-  debugger
   if (pages.value[index].turned) {
-    // back
-    // reverseIndex()
-    // for (let i = 0; i < pages.value.length; i++) {
-    //   reverseIndex()
+    // back page
     pages.value[index].turned = false;
 
     // Tìm zIndex lớn nhất hiện tại
@@ -38,11 +32,9 @@ function togglePage(index) {
 
       pages.value[index].animating = false;
     }, 500);
-    // }
 
   } else {
-    // next
-    debugger
+    // next page
     pages.value[index].turned = true;
     // Tìm zIndex lớn nhất hiện tại
     const maxZ = Math.max(...pages.value.map(p => p.zIndex));
@@ -246,7 +238,6 @@ $box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d; // transform-style 3D;
     transform-origin: left;
     transition: transform 1s cubic-bezier(.645, .045, .355, 1);
-    // transition-duration: 3s;
     box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.1);
 
     .page-front,
@@ -259,14 +250,11 @@ $box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
       background: $pages-color;
       padding: 1.5rem 2rem;
       transform: rotateY(180deg) translateZ(1px);
-      // backface-visibility: hidden;
     }
 
     .page-front {
       transform: rotateY(0deg) translateZ(1px);
     }
-
-    .page-back {}
   }
 }
 </style>
