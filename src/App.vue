@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
+import HomeCover from './page/HomeCover.vue';
 
 const pages = ref([
   { front: 'Page 1 Front', back: 'Page 1 Back', turned: true, zIndex: 1, animating: true },
@@ -111,7 +112,7 @@ onMounted(() => {
 
       <div class="book">
         <!-- page 0 -->
-        <div class="book-page page-left">page 0 - num {{ pageNumber }}</div>
+        <div class="book-page page-left"><HomeCover></HomeCover></div>
 
         <!-- page right 1-2 turn -->
         <div v-for="(item, index) in pages" :key="index" class="book-page page-right" :class="{ turn: item.turned }"
@@ -161,7 +162,7 @@ $box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   position: relative;
   width: 1024px;
   height: 90vh;
-  padding: 32px;
+  padding: 20px;
   perspective: 250rem;
   animation: show-animate 2s forwards;
 }
