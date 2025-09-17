@@ -7,16 +7,15 @@
     <!-- body -->
     <div class="page-content mt-2">
       <v-card class="mx-auto" max-width="400">
-        <v-img class="align-end text-white" height="200" src="../../static/images/ava2.jpg" cover>
-          <v-card-title>Nguyen Van Quyet</v-card-title>
-        </v-img>
-
-        <v-card-subtitle class="pt-4">
+        <img class="align-end text-white" height="200" src="../../static/images/ava2.jpg"
+          style="object-fit: cover; width: 100%;" />
+        <v-card-title>Nguyen Van Quyet</v-card-title>
+        <v-card-subtitle>
           Frontend Developer
         </v-card-subtitle>
 
         <v-card-text>
-          <div><v-icon icon="mdi-phone" size="14"></v-icon> (+84) 336 496 292</div>
+          <div class="mb-1"><v-icon icon="mdi-phone" size="14"></v-icon> (+84) 336 496 292</div>
           <div><v-icon icon="mdi-email" size="14"></v-icon> Quyethn2@gmail.com</div>
         </v-card-text>
 
