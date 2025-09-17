@@ -1,12 +1,17 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import HomeCover from './page/HomeCover.vue';
+import Experience from './page/Experience.vue';
+import Skill from './page/Skill.vue';
+import Education from './page/Education.vue';
+import Projects from './page/Projects.vue';
+import Contact from './page/Contact.vue';
+import Certificates from './page/Certificates.vue';
 
 const pages = ref([
-  { front: 'Page 1 Front', back: 'Page 1 Back', turned: true, zIndex: 1, animating: true },
-  { front: 'Page 2 Front', back: 'Page 2 Back', turned: true, zIndex: 2, animating: true },
-  { front: 'Page 3 Front', back: 'Page 3 Back', turned: true, zIndex: 3, animating: true },
-  { front: 'Page 4 Front', back: 'Page 4 Back', turned: true, zIndex: 4, animating: true },
+  { zIndex: 1, animating: true, componentFront: Experience, componentBack: Skill, turned: true },
+  { zIndex: 2, animating: true, componentFront: Education, componentBack: Projects, turned: true },
+  { zIndex: 3, animating: true, componentFront: Certificates, componentBack: Contact, turned: true },
   // Add more pages as needed
 ]);
 
@@ -112,26 +117,19 @@ onMounted(() => {
 
       <div class="book">
         <!-- page 0 -->
-        <div class="book-page page-left"><HomeCover></HomeCover></div>
+        <div class="book-page page-left">
+          <HomeCover></HomeCover>
+        </div>
 
         <!-- page right 1-2 turn -->
         <div v-for="(item, index) in pages" :key="index" class="book-page page-right" :class="{ turn: item.turned }"
           :style="{ zIndex: item.zIndex }">
-          <div class="page-front">{{ item.front }}
-            <v-btn class="ma-2" color="orange-darken-2" @click.prevent="togglePage(index)" :disabled="item.animating">
-              <v-icon icon="mdi-arrow-right" start></v-icon>
-              Next
-            </v-btn>
+          <div class="page-front">
+            <component :is="item.componentFront" :togglePage="togglePage" :item="item" :index-page="index" />
           </div>
-          <div class="page-back">{{ item.back }}
-            <v-btn class="ma-2" color="orange-darken-2" @click.prevent="togglePage(index)" :disabled="item.animating">
-              <v-icon icon="mdi-arrow-left" start></v-icon>
-              Back
-            </v-btn>
-            <v-btn class="ma-2" color="orange-darken-2" @click="backProfile" v-if="index == totalPages - 1">
-              <v-icon icon="mdi-home" start></v-icon>
-              Back Home
-            </v-btn>
+          <div class="page-back">
+            <component :is="item.componentBack" :togglePage="togglePage" :item="item" :index-page="index"
+              :backToHome="backProfile" />
           </div>
         </div>
       </div>
