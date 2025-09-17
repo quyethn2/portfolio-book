@@ -7,8 +7,6 @@
     <div class="d-flex mt-2 ga-2">
       <v-btn variant="outlined" size="x-small" color="teal-darken-1" icon="mdi-facebook"
         @click="handleLink('https://facebook.com/quyethn2',)"></v-btn>
-      <v-btn variant="outlined" size="x-small" color="teal-darken-1" icon="mdi-instagram"
-        @click="handleLink('https://instagram.com/quyethn22',)"></v-btn>
       <v-btn variant="outlined" size="x-small" color="teal-darken-1" icon="mdi-linkedin"
         @click="handleLink('https://www.linkedin.com/in/quyet-nguyen-0838a2137',)"></v-btn>
       <v-btn variant="outlined" size="x-small" color="teal-darken-1" icon="mdi-github"
@@ -16,16 +14,19 @@
 
     </div>
     <div class="flex text-center text-body-2 mt-2">
-      Frontend Developer (Vue/React/Angular) with more than 7 years of experience delivering high-performance web apps.
+      I'm a Frontend Developer (Vue/React/Angular) with more than 8 years of experience delivering high-performance web
+      apps.
       Passionate about architecting scalable solutions with JavaScript, TypeScript, and modern CSS frameworks.
     </div>
     <div class="d-flex mt-2 ga-2">
-      <v-btn class="ma-2" color="teal-darken-1">
+      <v-btn class="ma-2" color="teal-darken-1"
+        href="https://drive.google.com/file/d/1XG-C5U9Hp-TUv-nm1i5vnhbquwl7nsZN/view?usp=sharing" target="_blank"
+        download>
         <v-icon icon="mdi-download" start></v-icon>
         Download CV
       </v-btn>
-      <v-btn class="ma-2" color="teal-darken-1" variant="outlined" @click="contactMe">
-        Contact Me!
+      <v-btn class="ma-2" color="teal-darken-1" variant="outlined" href="https://zalo.me/0336496292" target="_blank">
+        <v-icon icon="mdi-chat" start></v-icon> Contact Zalo!
       </v-btn>
     </div>
 
@@ -39,9 +40,9 @@ function handleLink(url) {
   window.open(url, '_blank');
 }
 
-function contactMe() {
-  // Handle contact me action
-}
+// function contactMe() {
+//   // Handle contact me action
+// }
 
 </script>
 
