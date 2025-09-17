@@ -24,7 +24,7 @@
 
         <v-timeline-item dot-color="blue" size="small">
           <template v-slot:opposite>
-            <div class="text-body">05/2022 - 02/2023</div>
+            <div class="text-body">05/2022 - 05/2023</div>
           </template>
           <div class="d-flex">
             <div>
