@@ -2,13 +2,54 @@
   <div class="d-flex flex-column align-center justify-center w-100">
 
     <!-- header -->
-    <div class="text-h5 text-grey-darken-3 font-weight-bold mt-2">Experience</div>
+    <div class="text-h5 text-grey-darken-3 font-weight-bold mt-2">Work Experience</div>
 
     <!-- body -->
     <div class="page-content mt-2">
-      <div class="text-h6 text-teal-darken-1 font-weight-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Animi facilis odio accusamus sequi quasi consectetur placeat assumenda officia voluptas illo? Nisi quas
-        deleniti fugiat ipsum distinctio aperiam quisquam quia aspernatur?</div>
+      <v-timeline align="start" side="end">
+        <v-timeline-item dot-color="red-darken-3" size="small">
+          <template v-slot:opposite>
+            <div class="text-body">07/2023 - 02/2025</div>
+          </template>
+          <div class="d-flex">
+            <div>
+              <strong>RIKKEI SOFT</strong>
+
+              <div>
+                <img src="../../static/images/RK.png" alt="RIKKEI" height="50">
+              </div>
+            </div>
+          </div>
+        </v-timeline-item>
+
+        <v-timeline-item dot-color="blue" size="small">
+          <template v-slot:opposite>
+            <div class="text-body">05/2022 - 02/2023</div>
+          </template>
+          <div class="d-flex">
+            <div>
+              <strong>CMC GLOBAL</strong>
+              <div class="mt-2">
+                <img src="../../static/images/CMC.png" alt="RIKKEI" height="50">
+              </div>
+            </div>
+          </div>
+        </v-timeline-item>
+
+        <v-timeline-item dot-color="red-lighten-1" size="small">
+          <template v-slot:opposite>
+            <div class="text-body">08/2017 - 04/2022</div>
+          </template>
+          <div class="d-flex">
+            <div>
+              <strong>SITEN JSC</strong>
+              <div class="">
+                <img src="../../static/images/siten.svg" alt="RIKKEI" height="50">
+              </div>
+            </div>
+          </div>
+        </v-timeline-item>
+      </v-timeline>
     </div>
 
     <!-- footer -->
@@ -35,5 +76,6 @@ const props = defineProps(['togglePage', 'item', 'indexPage']);
   height: 60vh;
   max-height: 60vh;
   overflow-y: auto;
+  width: 100%;
 }
 </style>

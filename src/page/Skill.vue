@@ -6,9 +6,120 @@
 
     <!-- body -->
     <div class="page-content mt-2">
-      <div class="text-h6 text-teal-darken-1 font-weight-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Animi facilis odio accusamus sequi quasi consectetur placeat assumenda officia voluptas illo? Nisi quas
-        deleniti fugiat ipsum distinctio aperiam quisquam quia aspernatur?</div>
+      <div class="d-flex ga-2">
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-language-html5" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">HTML5</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-language-css3" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">CSS3</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-language-javascript" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Javascript</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-language-typescript" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Typescript</div>
+            </div>
+          </v-card-item>
+        </v-card>
+      </div>
+      <div class="d-flex ga-2 mt-2">
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-vuejs" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Vuejs</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-react" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Reactjs</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-angular" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Angular</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-vuetify" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Vuetify</div>
+            </div>
+          </v-card-item>
+        </v-card>
+      </div>
+
+      <div class="d-flex ga-2 mt-2">
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-material-ui" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Material UI</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-tailwind" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Tailwind CSS</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-git" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">Git</div>
+            </div>
+          </v-card-item>
+        </v-card>
+
+        <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+          <v-card-item>
+            <div>
+              <v-icon color="teal-darken-1" icon="mdi-microsoft-visual-studio-code" size="50px"></v-icon>
+              <div class="text-caption text-center text-teal-darken-1">VS code</div>
+            </div>
+          </v-card-item>
+        </v-card>
+      </div>
+
     </div>
 
     <!-- footer -->
@@ -38,5 +149,6 @@ const props = defineProps(['togglePage', 'item', 'indexPage']);
   height: 60vh;
   max-height: 60vh;
   overflow-y: auto;
+  width: 100%;
 }
 </style>

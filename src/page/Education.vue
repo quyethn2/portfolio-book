@@ -6,9 +6,25 @@
 
     <!-- body -->
     <div class="page-content mt-2">
-      <div class="text-h6 text-teal-darken-1 font-weight-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Animi facilis odio accusamus sequi quasi consectetur placeat assumenda officia voluptas illo? Nisi quas
-        deleniti fugiat ipsum distinctio aperiam quisquam quia aspernatur?</div>
+      <div class="font-weight-bold mt-1 text-teal-darken-1 align-center">
+        <v-icon color="teal-darken-1" icon="mdi-calendar" size="small"></v-icon>
+        2014 - 2017
+      </div>
+      <div class="text-h6 font-weight-bold mt-2">
+        HaNoi Institute Of Technology
+      </div>
+      <div class="text-subtitle-1">
+        Major: Information Technology
+      </div>
+      <div class="text-subtitle-1">
+        Graduated: August 2017
+      </div>
+      <div class="text-subtitle-1">
+        Degree classification: Good
+      </div>
+      <div class="text-subtitle-1">
+        GPA: 2.87/4.0
+      </div>
     </div>
 
     <!-- footer -->
@@ -35,5 +51,6 @@ const props = defineProps(['togglePage', 'item', 'indexPage']);
   height: 60vh;
   max-height: 60vh;
   overflow-y: auto;
+  width: 100%;
 }
 </style>

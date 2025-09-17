@@ -6,9 +6,22 @@
 
     <!-- body -->
     <div class="page-content mt-2">
-      <div class="text-h6 text-teal-darken-1 font-weight-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Animi facilis odio accusamus sequi quasi consectetur placeat assumenda officia voluptas illo? Nisi quas
-        deleniti fugiat ipsum distinctio aperiam quisquam quia aspernatur?</div>
+      <v-card class="mx-auto" max-width="400">
+        <v-img class="align-end text-white" height="200" src="../../static/images/ava2.jpg" cover>
+          <v-card-title>Nguyen Van Quyet</v-card-title>
+        </v-img>
+
+        <v-card-subtitle class="pt-4">
+          Frontend Developer
+        </v-card-subtitle>
+
+        <v-card-text>
+          <div><v-icon icon="mdi-phone" size="14"></v-icon> (+84) 336 496 292</div>
+          <div><v-icon icon="mdi-email" size="14"></v-icon> Quyethn2@gmail.com</div>
+        </v-card-text>
+
+
+      </v-card>
     </div>
 
     <!-- footer -->
@@ -37,5 +50,6 @@ const props = defineProps(['togglePage', 'item', 'indexPage', 'backToHome']);
   height: 60vh;
   max-height: 60vh;
   overflow-y: auto;
+  width: 100%;
 }
 </style>
