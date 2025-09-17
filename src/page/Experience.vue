@@ -30,7 +30,7 @@
             <div>
               <strong>CMC GLOBAL</strong>
               <div class="mt-2">
-                <img src="../../static/images/CMC.png" alt="RIKKEI" height="50">
+                <img src="../../static/images/CMC.png" alt="CMC" height="50">
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
             <div>
               <strong>SITEN JSC</strong>
               <div class="">
-                <img src="../../static/images/siten.svg" alt="RIKKEI" height="50">
+                <img src="../../static/images/siten.svg" alt="SITEN" height="50">
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@
     <!-- footer -->
     <div class="d-flex align-center mt-2 ga-2 justify-space-between w-100">
       <span class="hidden">&nbsp;</span>
-      <span>1</span>
+      <!-- <span>1</span> -->
       <v-btn class="ma-2" size="x-small" color="teal-darken-1" variant="outlined"
         @click.prevent="props.togglePage(props.indexPage)" :disabled="!!props.item?.animating" icon="mdi-arrow-right">
       </v-btn>

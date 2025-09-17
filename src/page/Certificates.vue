@@ -61,7 +61,7 @@
     <!-- footer -->
     <div class="d-flex align-center mt-2 ga-2 justify-space-between w-100">
       <span class="hidden">&nbsp;</span>
-      <span>5</span>
+      <!-- <span>5</span> -->
       <v-btn class="ma-2" size="x-small" color="teal-darken-1" variant="outlined"
         @click.prevent="props.togglePage(props.indexPage)" :disabled="!!props.item?.animating" icon="mdi-arrow-right">
       </v-btn>

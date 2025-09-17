@@ -37,7 +37,7 @@
       <v-btn class="ma-2" size="x-small" color="teal-darken-1" variant="outlined"
         @click.prevent="props.togglePage(props.indexPage)" :disabled="!!props.item?.animating" icon="mdi-arrow-left">
       </v-btn>
-      <span>4</span>
+      <!-- <span>4</span> -->
       <!-- <v-btn class="ma-2" size="x-small" color="teal-darken-1" variant="outlined"
         @click.prevent="props.togglePage(props.indexPage)" :disabled="!!props.item?.animating" icon="mdi-arrow-right">
       </v-btn> -->
