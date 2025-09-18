@@ -7,6 +7,18 @@
     <!-- body -->
     <div class="page-content mt-2">
       <v-timeline align="start" side="end">
+
+        <v-timeline-item dot-color="blue-grey-lighten-1" size="small">
+          <template v-slot:opposite>
+            <div class="text-body">02/2025 - Present</div>
+          </template>
+          <div class="d-flex">
+            <div>
+              <strong>Freelancer</strong>
+            </div>
+          </div>
+        </v-timeline-item>
+
         <v-timeline-item dot-color="red-darken-3" size="small">
           <template v-slot:opposite>
             <div class="text-body">07/2023 - 02/2025</div>
@@ -16,7 +28,7 @@
               <strong>RIKKEI SOFT</strong>
 
               <div>
-                <img src="../../static/images/RK.png" alt="RIKKEI" height="50">
+                <img src="../../static/images/RK.png" alt="RIKKEI" height="35">
               </div>
             </div>
           </div>
@@ -30,7 +42,7 @@
             <div>
               <strong>CMC GLOBAL</strong>
               <div class="mt-2">
-                <img src="../../static/images/CMC.png" alt="CMC" height="50">
+                <img src="../../static/images/CMC.png" alt="CMC" height="35">
               </div>
             </div>
           </div>
@@ -44,7 +56,7 @@
             <div>
               <strong>SITEN JSC</strong>
               <div class="">
-                <img src="../../static/images/siten.svg" alt="SITEN" height="50">
+                <img src="../../static/images/siten.svg" alt="SITEN" height="35">
               </div>
             </div>
           </div>

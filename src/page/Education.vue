@@ -13,18 +13,26 @@
       <div class="text-h6 font-weight-bold mt-2">
         HaNoi Institute Of Technology
       </div>
-      <div class="text-subtitle-1">
+      <div class="text-subtitle-2">
         Major: Information Technology
       </div>
-      <div class="text-subtitle-1">
+      <div class="text-subtitle-2">
         Graduated: August 2017
       </div>
-      <div class="text-subtitle-1">
+      <div class="text-subtitle-2">
         Degree classification: Good
       </div>
-      <div class="text-subtitle-1">
+      <div class="text-subtitle-2">
         GPA: 2.87/4.0
       </div>
+
+      <v-card color="teal-darken-1" variant="outlined" class="mx-auto">
+        <v-card-item>
+          <div class="text-center">
+            <img src="../../static/images/associte.png" alt="associte" height="160">
+          </div>
+        </v-card-item>
+      </v-card>
     </div>
 
     <!-- footer -->
