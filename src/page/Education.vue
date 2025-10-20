@@ -11,7 +11,7 @@
         2014 - 2017
       </div>
       <div class="text-h6 font-weight-bold mt-2">
-        HaNoi Institute Of Technology
+        HaNoi College Of Technology
       </div>
       <div class="text-subtitle-2">
         Major: Information Technology
